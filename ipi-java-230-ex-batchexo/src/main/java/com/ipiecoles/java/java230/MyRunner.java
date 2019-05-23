@@ -125,9 +125,10 @@ public class MyRunner implements CommandLineRunner {
             throw new BatchException("la chaîne "+ commercialFields[0] +" ne respecte pas l'expression régulière " + REGEX_MATRICULE );
         }
         //controle de la date
+        LocalDate d =null;
         try
         {
-            LocalDate d =  DateTimeFormat.forPattern("dd/MM/yyyy").parseLocalDate(commercialFields[3]);
+            d =  DateTimeFormat.forPattern("dd/MM/yyyy").parseLocalDate(commercialFields[3]);
 
         }catch (Exception e){
             throw new BatchException(commercialFields[3] + " ne respecte pas le format de date dd/MM/yyyy");
@@ -156,7 +157,7 @@ public class MyRunner implements CommandLineRunner {
         c.setMatricule(commercialFields[0]);
         c.setNom(commercialFields[1]);
         c.setPrenom(commercialFields[2]);
-        c.setDateEmbauche(LocalDate.parse(commercialFields[3]));
+        c.setDateEmbauche(d);
         c.setSalaire(Double.parseDouble(commercialFields[4]));
         c.setCaAnnuel(Double.parseDouble(commercialFields[5]));
         c.setPerformance(Integer.parseInt(commercialFields[6]));
