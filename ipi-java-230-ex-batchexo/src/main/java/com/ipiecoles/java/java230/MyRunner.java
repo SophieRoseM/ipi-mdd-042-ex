@@ -116,28 +116,52 @@ public class MyRunner implements CommandLineRunner {
         //TODO
 
         String[]commercialFields = ligneCommercial.split(",");
-
+        //controle de la longueur du matricule
         if (commercialFields.length != NB_CHAMPS_COMMERCIAL) {
-            throw new BatchException("La ligne manager ne contient pas " + NB_CHAMPS_COMMERCIAL + " éléments");
+            throw new BatchException("La ligne manager ne contient pas " + NB_CHAMPS_COMMERCIAL + " éléments mais "+commercialFields.length );
         }
         //controle matricule
-        else if (!commercialFields[0].matches(REGEX_MATRICULE)){
-            throw new BatchException("la chaîne ne respecte pas l'expression régulière" + REGEX_MATRICULE );
-        }else {
-            Commercial c = new Commercial();
-            employes.add(c);
+        if (!commercialFields[0].matches(REGEX_MATRICULE)){
+            throw new BatchException("la chaîne "+ commercialFields[0] +" ne respecte pas l'expression régulière " + REGEX_MATRICULE );
+        }
+        //controle de la date
+        try
+        {
+            LocalDate d =  DateTimeFormat.forPattern("dd/MM/yyyy").parseLocalDate(commercialFields[3]);
 
+        }catch (Exception e){
+            throw new BatchException(commercialFields[3] + " ne respecte pas le format de date dd/MM/yyyy");
+        }
+        //controle du salaire
+        try {
+            double salaire = Double.parseDouble(commercialFields[4]);
+        }catch (Exception e){
+            throw new BatchException(commercialFields[4] + " n'est pas un nombre valide pour un salaire");
+        }
+        //controle du CA
+        try {
+            double ca = Double.parseDouble(commercialFields[5]);
+        }catch (Exception e){
+            throw new BatchException("Le chiffre d'affaire du commercial est incorrect");
+        }
+        //controle de La performance du commercial
+        try {
+            int perf = Integer.parseInt(commercialFields[6]);
+        }catch (Exception e){
+            throw new BatchException("La performance du commercial est incorrecte");
         }
 
 
-//        LocalDate d =  DateTimeFormat.forPattern("dd/MM/yyyy").parseLocalDate("");
-//        try
-//        {
-//            commercialFields[3].matches(d.toString());
-//
-//        }catch (Exception e){
-//            logger.error("ne respecte pas le format de date dd/MM/yyyy");
-//        }
+        Commercial c = new Commercial();
+        c.setMatricule(commercialFields[0]);
+        c.setNom(commercialFields[1]);
+        c.setPrenom(commercialFields[2]);
+        c.setDateEmbauche(LocalDate.parse(commercialFields[3]));
+        c.setSalaire(Double.parseDouble(commercialFields[4]));
+        c.setCaAnnuel(Double.parseDouble(commercialFields[5]));
+        c.setPerformance(Integer.parseInt(commercialFields[6]));
+
+        employes.add(c);
 
 
     }
