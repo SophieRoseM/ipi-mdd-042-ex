@@ -4,6 +4,7 @@
     <list default="true" id="4c4fc10d-54f6-448e-8b6f-974bfadedf9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipi-java-230-ex-batchexo/target/classes/com/ipiecoles/java/java230/MyRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/ipi-java-230-ex-batchexo/target/classes/com/ipiecoles/java/java230/MyRunner.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ipi-java-230-ex-batchexo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,38 +18,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="269" column="11" lean-forward="true" selection-start-line="268" selection-start-column="14" selection-end-line="269" selection-end-column="11" />
+            <state relative-caret-position="299">
+              <caret line="296" column="58" selection-start-line="296" selection-start-column="58" selection-end-line="296" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6638#6673#0" />
+                <element signature="e#8713#8743#0" />
+                <element signature="e#11666#11696#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/repository/ManagerRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/repository/BaseEmployeRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/resources/employes.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="47" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -56,17 +33,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/model/Technicien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="149">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="e#1609#1610#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/model/Manager.java">
+        <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#314#315#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,26 +149,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="java230" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipi-java-230-ex-batchexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipi-java-230-ex-batchexo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipi-java-230-ex-batchexo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java230" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipi-java-230-ex-batchexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipi-java-230-ex-batchexo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipi-java-230-ex-batchexo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java230" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ipi-java-230-ex-batchexo" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +273,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558595519431</updated>
       <workItem from="1558595520927" duration="16296000" />
-      <workItem from="1558681905148" duration="2662000" />
+      <workItem from="1558681905148" duration="7475000" />
     </task>
     <task id="LOCAL-00001" summary="commercial ok">
       <created>1558621509664</created>
@@ -326,11 +289,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558623358403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tous les controles ok, manque factorisation du code">
+      <created>1558684821802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558684821802</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21155000" />
+    <option name="totallyTimeSpent" value="25968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,7 +315,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -354,7 +324,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28895184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.296034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,7 +353,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commercial ok" />
     <MESSAGE value="fonction manager, fonction technicien ( manque le controle du matricule dans la bdd)&#10;manque la factorisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fonction manager, fonction technicien ( manque le controle du matricule dans la bdd)&#10;manque la factorisation" />
+    <MESSAGE value="tous les controles ok, manque factorisation du code" />
+    <option name="LAST_COMMIT_MESSAGE" value="tous les controles ok, manque factorisation du code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.m2/settings.xml">
@@ -393,13 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -414,13 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/resources/employes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -445,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/service/EmployeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -459,13 +409,6 @@
             <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/model/Technicien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -483,12 +426,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/service/EmployeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/resources/employes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/model/Technicien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1609#1610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="269" column="11" lean-forward="true" selection-start-line="268" selection-start-column="14" selection-end-line="269" selection-end-column="11" />
+        <state relative-caret-position="299">
+          <caret line="296" column="58" selection-start-line="296" selection-start-column="58" selection-end-line="296" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6638#6673#0" />
+            <element signature="e#8713#8743#0" />
+            <element signature="e#11666#11696#0" />
           </folding>
         </state>
       </provider>
