@@ -51,6 +51,7 @@ public class MyRunner implements CommandLineRunner {
         String fileName = "employes.csv";
         readFile(fileName);
         //readFile(strings[0]);
+        employeRepository.save(employes);
     }
 
     /**
@@ -141,11 +142,9 @@ public class MyRunner implements CommandLineRunner {
         employe.setSalaire(Double.parseDouble(employeFields[4]));
 
 
-
     }
 
-
-
+    
     /**
      * Méthode qui crée un Commercial à partir d'une ligne contenant les informations d'un commercial et l'ajoute dans la liste globale des employés
      * @param ligneCommercial la ligne contenant les infos du commercial à intégrer
@@ -283,11 +282,18 @@ public class MyRunner implements CommandLineRunner {
         if (!technicienFields[6].matches(REGEX_MATRICULE_MANAGER)){
             throw new BatchException("la chaîne "+ technicienFields[6] +" ne respecte pas l'expression régulière " + REGEX_MATRICULE_MANAGER );
         }
-        //controle si matricule manager n'existe pas dans la bdd
-        if (managerRepository.findByMatricule(technicienFields[6]) == null ){
+
+        // parcours la liste que l'on creer pour verifier que le manager existe ou pas deja
+        ArrayList<String> liste= new ArrayList<>();
+        for(Employe e : employes) {
+            if (e instanceof Manager) {
+                liste.add(e.getMatricule());
+            }
+        }
+        //controle si matricule manager n'existe pas dans la bdd et sil n'existe pas dans la liste
+        if (managerRepository.findByMatricule(technicienFields[6]) == null && !liste.contains(technicienFields[6])){
             throw new BatchException ("Le manager de matricule "+ technicienFields[6]+" n'a pas été trouvé dans le fichier ou en base de données");
         }
-
 
         try {
             t.setGrade(Integer.parseInt(technicienFields[5]));
