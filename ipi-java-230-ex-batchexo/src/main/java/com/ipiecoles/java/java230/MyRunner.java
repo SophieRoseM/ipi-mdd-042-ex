@@ -1,6 +1,7 @@
 package com.ipiecoles.java.java230;
 
 import com.ipiecoles.java.java230.exceptions.BatchException;
+import com.ipiecoles.java.java230.exceptions.TechnicienException;
 import com.ipiecoles.java.java230.model.Commercial;
 import com.ipiecoles.java.java230.model.Employe;
 import com.ipiecoles.java.java230.model.Manager;
@@ -14,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -254,29 +256,34 @@ public class MyRunner implements CommandLineRunner {
         }catch(Exception e){
             throw new BatchException("Le grade du technicien est incorrect");
         }
-        if ( grade<2 ||  grade>6){
-            throw new BatchException("Le grade doit être compris entre 1 et 5");
-        }
+//        if ( grade<1 ||  grade>5){
+//            throw new BatchException("Le grade doit être compris entre 1 et 5");
+//        }
 
         //controle matricule manager
         if (!technicienFields[6].matches(REGEX_MATRICULE_MANAGER)){
             throw new BatchException("la chaîne "+ technicienFields[6] +" ne respecte pas l'expression régulière " + REGEX_MATRICULE_MANAGER );
         }
-        //controle si matricule manager existe dans la bdd
+        //controle si matricule manager n'existe pas dans la bdd
+         if (managerRepository.findByMatricule(technicienFields[6]) == null ){
+              throw new BatchException ("Le manager de matricule "+ technicienFields[6]+" n'a pas été trouvé dans le fichier ou en base de données");
+          }
 
+        Technicien t = new Technicien();
+        t.setMatricule(technicienFields[0]);
+        t.setNom(technicienFields[1]);
+        t.setPrenom(technicienFields[2]);
+        t.setDateEmbauche(d);
 
+        try {
+            t.setGrade(Integer.parseInt(technicienFields[5]));
+        }catch (TechnicienException e){
+            throw new BatchException("Le grade doit être compris entre 1 et 5");
+        }
+        t.setSalaire(Double.parseDouble(technicienFields[4]));
+        t.setManager(managerRepository.findByMatricule(technicienFields[6]));
 
-
-//        Technicien t = new Technicien();
-//        t.setMatricule(technicienFields[0]);
-//        t.setNom(technicienFields[1]);
-//        t.setPrenom(technicienFields[2]);
-//        t.setDateEmbauche(d);
-//        t.setSalaire(Double.parseDouble(technicienFields[4]));
-//        t.setGrade(technicienFields[5]);
-//        t.setManager(technicienFields[6]);
-//
-//        employes.add(t);
+        employes.add(t);
 
     }
 
