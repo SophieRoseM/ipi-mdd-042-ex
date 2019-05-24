@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+            <state relative-caret-position="204">
+              <caret line="302" column="58" selection-start-line="302" selection-start-column="58" selection-end-line="302" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6638#6673#0" />
@@ -281,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558595519431</updated>
       <workItem from="1558595520927" duration="16296000" />
-      <workItem from="1558681905148" duration="9855000" />
+      <workItem from="1558681905148" duration="10481000" />
     </task>
     <task id="LOCAL-00001" summary="commercial ok">
       <created>1558621509664</created>
@@ -311,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558689796090</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="parcours la liste pour verifier matricule dans la nouvelle liste, save employe">
+      <created>1558693273493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558693273493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28348000" />
+    <option name="totallyTimeSpent" value="28974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,7 +377,8 @@
     <MESSAGE value="fonction manager, fonction technicien ( manque le controle du matricule dans la bdd)&#10;manque la factorisation" />
     <MESSAGE value="tous les controles ok, manque factorisation du code" />
     <MESSAGE value="factorisation du code" />
-    <option name="LAST_COMMIT_MESSAGE" value="factorisation du code" />
+    <MESSAGE value="parcours la liste pour verifier matricule dans la nouvelle liste, save employe" />
+    <option name="LAST_COMMIT_MESSAGE" value="parcours la liste pour verifier matricule dans la nouvelle liste, save employe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.m2/settings.xml">
@@ -478,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ipi-java-230-ex-batchexo/src/main/java/com/ipiecoles/java/java230/MyRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="302" column="58" selection-start-line="302" selection-start-column="58" selection-end-line="302" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6638#6673#0" />

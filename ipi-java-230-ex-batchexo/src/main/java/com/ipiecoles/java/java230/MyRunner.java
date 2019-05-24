@@ -144,7 +144,7 @@ public class MyRunner implements CommandLineRunner {
 
     }
 
-    
+
     /**
      * Méthode qui crée un Commercial à partir d'une ligne contenant les informations d'un commercial et l'ajoute dans la liste globale des employés
      * @param ligneCommercial la ligne contenant les infos du commercial à intégrer
@@ -301,7 +301,6 @@ public class MyRunner implements CommandLineRunner {
             throw new BatchException("Le grade doit être compris entre 1 et 5");
         }
         processEmploye(t,ligneTechnicien,REGEX_MATRICULE);
-        t.setSalaire(Double.parseDouble(technicienFields[4]));
         t.setManager(managerRepository.findByMatricule(technicienFields[6]));
 
         employes.add(t);
